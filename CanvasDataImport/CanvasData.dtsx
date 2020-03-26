@@ -7,12 +7,12 @@
   DTS:CreatorName="UVIEW\kshelton"
   DTS:DTSID="{EE8D5CCD-6FB9-470B-8680-37571C338135}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.71"
+  DTS:LastModifiedProductVersion="15.0.1900.80"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{1CDD4389-CFAB-4ED1-892C-DC0648B23753}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{811E3081-900D-4A59-81C9-543009080FF8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4611,6 +4611,217 @@
               DTS:TextQualified="True"
               DTS:ObjectName="workflow_state"
               DTS:DTSID="{FC07C1A1-D612-4888-84A1-0605656BD913}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[grading_period_score_dim]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0934F510-2774-4694-A1AB-6703E1D21FAF}"
+      DTS:ObjectName="grading_period_score_dim">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="F:\CanvasData\files-unpacked\grading_period_score_dim.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{73D79BD5-D76D-4B4D-9A29-26243C0862C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="canvas_id"
+              DTS:DTSID="{92735C16-7880-4495-9C7F-AC66D7A1512A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="enrollment_id"
+              DTS:DTSID="{11FD599F-C871-45F1-AD09-18AD3EE31CC7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="grading_period_id"
+              DTS:DTSID="{2084F95B-9FB5-4894-9024-D7BF7272F1C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="created_at"
+              DTS:DTSID="{E2B92C5F-ABA3-4F8D-8519-FCA48F22208C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="updated_at"
+              DTS:DTSID="{2B77C53F-D6AE-4C51-BE63-EB71BEDFAFEE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="workflow_state"
+              DTS:DTSID="{89F29E5C-7DB5-408E-BC66-8F7D6D77FA14}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[grading_period_score_fact]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{112BC456-D2B6-4523-84C4-00DFE8C97DAD}"
+      DTS:ObjectName="grading_period_score_fact">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="F:\CanvasData\files-unpacked\grading_period_score_fact.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="score_id"
+              DTS:DTSID="{A0344D07-CEB4-4710-81D0-A64C266C9294}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="canvas_id"
+              DTS:DTSID="{6A23C586-2F12-4D1E-BDF1-396377AF5B61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="account_id"
+              DTS:DTSID="{2A293B3E-1E0D-49FA-9279-893123BEBFB5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="course_id"
+              DTS:DTSID="{551B3164-F53C-43A9-8B3B-DB37BBA58402}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="enrollment_id"
+              DTS:DTSID="{D2B749BC-17F4-4190-B4F9-5DB888BF54B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="grading_period_id"
+              DTS:DTSID="{5D23EEDF-DF42-4631-B6BA-FE9E5C8FBD19}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="grading_period_group_id"
+              DTS:DTSID="{016097DC-9FB7-4E74-8579-52F5D0A8D0BA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="grading_period_group_account_id"
+              DTS:DTSID="{3EBDD7A8-72D9-462B-9FF2-1E13D8E977F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="current_score"
+              DTS:DTSID="{36882A3E-7BC3-485C-8E34-297DA6AFF3F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="final_score"
+              DTS:DTSID="{CE6DB7A8-E163-479E-A113-896C7D409FA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="muted_current_score"
+              DTS:DTSID="{5BB410F0-C4F2-476C-90CE-BDD0C5396D7F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="muted_final_score"
+              DTS:DTSID="{B75ECCEF-189F-48CB-B5AC-E835BBB2538B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -38743,8 +38954,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task 1\grading_period_score_dim.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[grading_period_dim]"
-                  connectionManagerRefId="Package.ConnectionManagers[grading_period_dim]"
+                  connectionManagerID="Package.ConnectionManagers[grading_period_score_dim]"
+                  connectionManagerRefId="Package.ConnectionManagers[grading_period_score_dim]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -38797,50 +39008,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[grading_period_group_id]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[grading_period_group_id]"
-                      length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[grading_period_group_id]"
-                      name="grading_period_group_id"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[close_date]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[close_date]"
-                      length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[close_date]"
-                      name="close_date"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[created_at]"
                       codePage="1252"
                       dataType="str"
@@ -38850,72 +39017,6 @@
                       length="50"
                       lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[created_at]"
                       name="created_at"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[end_date]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[end_date]"
-                      length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[end_date]"
-                      name="end_date"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[start_date]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[start_date]"
-                      length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[start_date]"
-                      name="start_date"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[title]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[title]"
-                      length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[title]"
-                      name="title"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -38972,6 +39073,50 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[enrollment_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[enrollment_id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[enrollment_id]"
+                      name="enrollment_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[grading_period_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[grading_period_id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[grading_period_id]"
+                      name="grading_period_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -38988,41 +39133,11 @@
                       length="50"
                       name="canvas_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[grading_period_group_id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="grading_period_group_id" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[close_date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="close_date" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[created_at]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="created_at" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[end_date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="end_date" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[start_date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="start_date" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[title]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="title" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[updated_at]"
                       codePage="1252"
@@ -39035,6 +39150,18 @@
                       dataType="str"
                       length="50"
                       name="workflow_state" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[enrollment_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="enrollment_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].ExternalColumns[grading_period_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="grading_period_id" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -39082,7 +39209,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[grading_period_dim]</property>
+                  name="OpenRowset">[dbo].[grading_period_score_dim]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -39155,22 +39282,6 @@
                       externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[canvas_id]"
                       lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[canvas_id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].Columns[grading_period_group_id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="grading_period_group_id"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[grading_period_group_id]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[grading_period_group_id]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].Columns[close_date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="close_date"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[close_date]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[close_date]" />
-                    <inputColumn
                       refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].Columns[created_at]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -39178,30 +39289,6 @@
                       cachedName="created_at"
                       externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[created_at]"
                       lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[created_at]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].Columns[end_date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="end_date"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[end_date]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].Columns[start_date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="start_date"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[start_date]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].Columns[title]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="title"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[title]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[title]" />
                     <inputColumn
                       refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].Columns[updated_at]"
                       cachedCodepage="1252"
@@ -39218,6 +39305,22 @@
                       cachedName="workflow_state"
                       externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[workflow_state]"
                       lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[workflow_state]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].Columns[enrollment_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="enrollment_id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_id]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[enrollment_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].Columns[grading_period_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="grading_period_id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[grading_period_id]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output].Columns[grading_period_id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -39234,41 +39337,11 @@
                       length="50"
                       name="canvas_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[grading_period_group_id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="grading_period_group_id" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[close_date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="close_date" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[created_at]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="created_at" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="end_date" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="start_date" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[title]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="title" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[updated_at]"
                       codePage="1252"
@@ -39281,6 +39354,18 @@
                       dataType="str"
                       length="50"
                       name="workflow_state" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="enrollment_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input].ExternalColumns[grading_period_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="grading_period_id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -39331,8 +39416,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task 1\grading_period_score_fact.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[grading_period_dim]"
-                  connectionManagerRefId="Package.ConnectionManagers[grading_period_dim]"
+                  connectionManagerID="Package.ConnectionManagers[grading_period_score_fact]"
+                  connectionManagerRefId="Package.ConnectionManagers[grading_period_score_fact]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -39340,28 +39425,6 @@
                   refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[id]"
-                      length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[id]"
-                      name="id"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[canvas_id]"
                       codePage="1252"
@@ -39407,15 +39470,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[close_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[score_id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[close_date]"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[score_id]"
                       length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[close_date]"
-                      name="close_date"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[score_id]"
+                      name="score_id"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -39429,15 +39492,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[created_at]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[account_id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[created_at]"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[account_id]"
                       length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[created_at]"
-                      name="created_at"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[account_id]"
+                      name="account_id"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -39451,15 +39514,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[end_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[course_id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[end_date]"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[course_id]"
                       length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[end_date]"
-                      name="end_date"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[course_id]"
+                      name="course_id"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -39473,15 +39536,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[start_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[enrollment_id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[start_date]"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[enrollment_id]"
                       length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[start_date]"
-                      name="start_date"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[enrollment_id]"
+                      name="enrollment_id"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -39495,15 +39558,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[title]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[grading_period_id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[grading_period_id]"
                       length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[title]"
-                      name="title"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[grading_period_id]"
+                      name="grading_period_id"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -39517,15 +39580,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[updated_at]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[grading_period_group_account_id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[updated_at]"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[grading_period_group_account_id]"
                       length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[updated_at]"
-                      name="updated_at"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[grading_period_group_account_id]"
+                      name="grading_period_group_account_id"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -39539,15 +39602,81 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[workflow_state]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[current_score]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[workflow_state]"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[current_score]"
                       length="50"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[workflow_state]"
-                      name="workflow_state"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[current_score]"
+                      name="current_score"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[final_score]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[final_score]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[final_score]"
+                      name="final_score"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[muted_current_score]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[muted_current_score]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[muted_current_score]"
+                      name="muted_current_score"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[muted_final_score]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[muted_final_score]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[muted_final_score]"
+                      name="muted_final_score"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -39564,12 +39693,6 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="id" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[canvas_id]"
                       codePage="1252"
                       dataType="str"
@@ -39582,47 +39705,65 @@
                       length="50"
                       name="grading_period_group_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[close_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[score_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="close_date" />
+                      name="score_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[created_at]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[account_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="created_at" />
+                      name="account_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[end_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[course_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="end_date" />
+                      name="course_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[start_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[enrollment_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="start_date" />
+                      name="enrollment_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[grading_period_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="title" />
+                      name="grading_period_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[updated_at]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[grading_period_group_account_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="updated_at" />
+                      name="grading_period_group_account_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[workflow_state]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[current_score]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="workflow_state" />
+                      name="current_score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[final_score]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="final_score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[muted_current_score]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="muted_current_score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].ExternalColumns[muted_final_score]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="muted_final_score" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -39670,7 +39811,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[grading_period_dim]</property>
+                  name="OpenRowset">[dbo].[grading_period_score_fact]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -39727,14 +39868,6 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="id"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[id]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[id]" />
-                    <inputColumn
                       refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[canvas_id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -39751,70 +39884,88 @@
                       externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[grading_period_group_id]"
                       lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[grading_period_group_id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[close_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[score_id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="close_date"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[close_date]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[close_date]" />
+                      cachedName="score_id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[score_id]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[score_id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[created_at]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[account_id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="created_at"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[created_at]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[created_at]" />
+                      cachedName="account_id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[account_id]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[account_id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[end_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[course_id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="end_date"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[end_date]" />
+                      cachedName="course_id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[course_id]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[course_id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[start_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[enrollment_id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="start_date"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[start_date]" />
+                      cachedName="enrollment_id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_id]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[enrollment_id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[title]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[grading_period_id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="title"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[title]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[title]" />
+                      cachedName="grading_period_id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[grading_period_id]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[grading_period_id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[updated_at]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[grading_period_group_account_id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="updated_at"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[updated_at]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[updated_at]" />
+                      cachedName="grading_period_group_account_id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[grading_period_group_account_id]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[grading_period_group_account_id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[workflow_state]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[current_score]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="workflow_state"
-                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[workflow_state]"
-                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[workflow_state]" />
+                      cachedName="current_score"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[current_score]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[current_score]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[final_score]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="final_score"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[final_score]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[final_score]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[muted_current_score]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="muted_current_score"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[muted_current_score]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[muted_current_score]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].Columns[muted_final_score]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="muted_final_score"
+                      externalMetadataColumnId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[muted_final_score]"
+                      lineageId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output].Columns[muted_final_score]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="id" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[canvas_id]"
                       codePage="1252"
@@ -39828,47 +39979,65 @@
                       length="50"
                       name="grading_period_group_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[close_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[score_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="close_date" />
+                      name="score_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[created_at]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[account_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="created_at" />
+                      name="account_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[course_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="end_date" />
+                      name="course_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="start_date" />
+                      name="enrollment_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[grading_period_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="title" />
+                      name="grading_period_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[updated_at]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[grading_period_group_account_id]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="updated_at" />
+                      name="grading_period_group_account_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[workflow_state]"
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[current_score]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="workflow_state" />
+                      name="current_score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[final_score]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="final_score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[muted_current_score]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="muted_current_score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input].ExternalColumns[muted_final_score]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="muted_final_score" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -43942,44 +44111,44 @@
               startId="Package\Data Flow Task 1\user_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output17]"
-              endId="Package\Data Flow Task 1\grading_period_group_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\grading_period_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\grading_period_group_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\grading_period_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output16]"
-              endId="Package\Data Flow Task 1\grading_period_fact DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\submission_fact DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\grading_period_fact.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\submission_fact.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output15]"
-              endId="Package\Data Flow Task 1\pseudonym_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\submission_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\pseudonym_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\submission_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output14]"
-              endId="Package\Data Flow Task 1\account_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\enrollment_term_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\account_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\enrollment_term_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output13]"
-              endId="Package\Data Flow Task 1\assignment_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\enrollment_fact DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\assignment_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\enrollment_fact.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output12]"
-              endId="Package\Data Flow Task 1\assignment_fact DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\enrollment_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\assignment_fact.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\enrollment_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output11]"
-              endId="Package\Data Flow Task 1\assignment_group_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\course_section_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\assignment_group_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\course_section_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output10]"
-              endId="Package\Data Flow Task 1\assigment_group_fact DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\course_score_fact DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\assignment_group_fact.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\course_score_fact.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output9]"
               endId="Package\Data Flow Task 1\course_dim DB.Inputs[OLE DB Destination Input]"
@@ -43987,54 +44156,54 @@
               startId="Package\Data Flow Task 1\course_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output8]"
-              endId="Package\Data Flow Task 1\course_score_fact DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\assigment_group_fact DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\course_score_fact.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\assignment_group_fact.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output7]"
-              endId="Package\Data Flow Task 1\course_section_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\assignment_group_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\course_section_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\assignment_group_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output6]"
-              endId="Package\Data Flow Task 1\enrollment_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\assignment_fact DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\enrollment_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\assignment_fact.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output5]"
-              endId="Package\Data Flow Task 1\enrollment_fact DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\assignment_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\enrollment_fact.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\assignment_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output4]"
-              endId="Package\Data Flow Task 1\enrollment_term_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\account_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\enrollment_term_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\account_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output3]"
-              endId="Package\Data Flow Task 1\submission_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\pseudonym_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\submission_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\pseudonym_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output2]"
-              endId="Package\Data Flow Task 1\submission_fact DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\grading_period_fact DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\submission_fact.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\grading_period_fact.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output1]"
-              endId="Package\Data Flow Task 1\grading_period_dim DB.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task 1\grading_period_group_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\grading_period_dim.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task 1\grading_period_group_dim.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Task 1.Paths[Flat File Source Output18]"
-              endId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input]"
-              name="Flat File Source Output"
-              startId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output]" />
-            <path
-              refId="Package\Data Flow Task 1.Paths[Flat File Source Output19]"
               endId="Package\Data Flow Task 1\grading_period_score_dim DB.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task 1\grading_period_score_dim.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Flat File Source Output19]"
+              endId="Package\Data Flow Task 1\grading_period_score_fact DB.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task 1\grading_period_score_fact.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -44043,7 +44212,6 @@
       DTS:refId="Package\Execute Process Task"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
-      DTS:Disabled="True"
       DTS:DTSID="{95D967D6-64B8-45FB-A7D3-D271DB87FCD8}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
@@ -44085,7 +44253,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{04F23701-7F9C-47D3-B170-A5CE6270A32A}"
-          SQLTask:SqlStatementSource="truncate table account_dim&#xA;truncate table assignment_dim&#xA;truncate table assignment_fact&#xA;truncate table assignment_group_dim&#xA;truncate table assignment_group_fact&#xA;truncate table assignment_group_rule_dim&#xA;truncate table course_dim&#xA;truncate table course_score_dim&#xA;truncate table course_score_fact&#xA;truncate table course_section_dim&#xA;truncate table enrollment_dim&#xA;truncate table enrollment_fact&#xA;truncate table enrollment_term_dim&#xA;truncate table pseudonym_dim&#xA;truncate table pseudonym_fact&#xA;truncate table submission_dim&#xA;truncate table submission_fact&#xA;truncate table user_dim&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table account_dim&#xA;truncate table assignment_dim&#xA;truncate table assignment_fact&#xA;truncate table assignment_group_dim&#xA;truncate table assignment_group_fact&#xA;truncate table assignment_group_rule_dim&#xA;truncate table course_dim&#xA;truncate table course_score_dim&#xA;truncate table course_score_fact&#xA;truncate table course_section_dim&#xA;truncate table enrollment_dim&#xA;truncate table enrollment_fact&#xA;truncate table enrollment_term_dim&#xA;truncate table grading_period_dim&#xA;truncate table grading_period_fact&#xA;truncate table grading_period_group_dim&#xA;truncate table grading_period_score_dim&#xA;truncate table grading_period_score_fact&#xA;truncate table pseudonym_dim&#xA;truncate table pseudonym_fact&#xA;truncate table submission_dim&#xA;truncate table submission_fact&#xA;truncate table user_dim&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -44128,7 +44296,7 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="152,42.6666666666667"
+          Size="152,43"
           Id="Package\Data Flow Task"
           TopLeft="314.047618950052,239.214282160997" />
         <NodeLayout
@@ -45194,21 +45362,21 @@
           Id="Package\Data Flow Task 1\course_score_fact"
           TopLeft="1771.84110426297,33.5" />
         <NodeLayout
-          Size="153.333333333334,42"
+          Size="153,42"
           Id="Package\Data Flow Task 1\grading_period_group_dim"
-          TopLeft="1519.71477470749,379.119448340345" />
+          TopLeft="1201.71477470749,377.119448340345" />
         <NodeLayout
           Size="140,42"
           Id="Package\Data Flow Task 1\enrollment_term_dim DB"
           TopLeft="1242.5,293.899409429761" />
         <NodeLayout
-          Size="124,42"
-          Id="Package\Data Flow Task 1\user_dim"
-          TopLeft="1981,217" />
-        <NodeLayout
           Size="158,42"
           Id="Package\Data Flow Task 1\course_section_dim"
           TopLeft="1958.06837699024,32.6363636363637" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\Data Flow Task 1\user_dim"
+          TopLeft="1981,217" />
         <NodeLayout
           Size="178,42"
           Id="Package\Data Flow Task 1\grading_period_dim DB"
@@ -45218,17 +45386,21 @@
           Id="Package\Data Flow Task 1\assignment_dim DB"
           TopLeft="971.244268278773,106.862554112554" />
         <NodeLayout
-          Size="130.666666666667,42"
+          Size="159,42"
+          Id="Package\Data Flow Task 1\grading_period_score_dim"
+          TopLeft="1385.09990984262,375.880551659654" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Data Flow Task 1\grading_period_score_fact"
+          TopLeft="1554.09990984262,374.5" />
+        <NodeLayout
+          Size="131,42"
           Id="Package\Data Flow Task 1\user_dim DB"
           TopLeft="1977,294" />
         <NodeLayout
-          Size="141.333333333334,42"
+          Size="141,42"
           Id="Package\Data Flow Task 1\pseudonym_dim"
           TopLeft="1417,202" />
-        <NodeLayout
-          Size="141.333333333334,42"
-          Id="Package\Data Flow Task 1\pseudonym_dim DB"
-          TopLeft="1416.5,279.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Data Flow Task 1\course_section_dim DB"
@@ -45238,15 +45410,15 @@
           Id="Package\Data Flow Task 1\enrollment_fact"
           TopLeft="1025.84110426297,208.5" />
         <NodeLayout
-          Size="141.333333333334,42"
+          Size="141,42"
+          Id="Package\Data Flow Task 1\pseudonym_dim DB"
+          TopLeft="1416.5,279.5" />
+        <NodeLayout
+          Size="141,42"
           Id="Package\Data Flow Task 1\assignment_fact"
           TopLeft="1122.8459998805,29" />
         <NodeLayout
-          Size="142,42"
-          Id="Package\Data Flow Task 1\submission_dim DB"
-          TopLeft="1613.5,286" />
-        <NodeLayout
-          Size="177.333333333334,42.6666666666667"
+          Size="177,43"
           Id="Package\Data Flow Task 1\grading_period_fact DB"
           TopLeft="1017.36486486487,455.5" />
         <NodeLayout
@@ -45258,19 +45430,27 @@
           Id="Package\Data Flow Task 1\assignment_group_dim DB"
           TopLeft="1269.57875210004,108.044372294372" />
         <NodeLayout
-          Size="138.666666666667,42"
+          Size="142,42"
+          Id="Package\Data Flow Task 1\submission_dim DB"
+          TopLeft="1613.5,286" />
+        <NodeLayout
+          Size="139,42"
           Id="Package\Data Flow Task 1\enrollment_term_dim"
           TopLeft="1240.07909982175,202.5" />
         <NodeLayout
-          Size="146.666666666667,42"
+          Size="158,42"
+          Id="Package\Data Flow Task 1\submission_dim"
+          TopLeft="1615.00907396722,212" />
+        <NodeLayout
+          Size="147,42"
           Id="Package\Data Flow Task 1\course_score_fact DB"
           TopLeft="1770.5,118.454545454545" />
         <NodeLayout
-          Size="138.666666666667,42"
+          Size="139,42"
           Id="Package\Data Flow Task 1\assignment_group_dim"
           TopLeft="1276.96721200172,29.8809523809524" />
         <NodeLayout
-          Size="138.666666666667,42"
+          Size="139,42"
           Id="Package\Data Flow Task 1\assignment_dim"
           TopLeft="969.066779101284,30.0443722943723" />
         <NodeLayout
@@ -45278,29 +45458,33 @@
           Id="Package\Data Flow Task 1\course_dim DB"
           TopLeft="1591.5,106.818181818182" />
         <NodeLayout
-          Size="158,42"
-          Id="Package\Data Flow Task 1\submission_fact"
-          TopLeft="1783.00907396722,214" />
-        <NodeLayout
-          Size="161.333333333334,42.6666666666667"
+          Size="161,43"
           Id="Package\Data Flow Task 1\grading_period_group_dim DB"
-          TopLeft="1522.6981981982,460.5" />
+          TopLeft="1204.6981981982,458.5" />
         <NodeLayout
           Size="140,42"
           Id="Package\Data Flow Task 1\assignment_group_fact"
           TopLeft="1428.63387866838,30.4642857142857" />
         <NodeLayout
           Size="158,42"
-          Id="Package\Data Flow Task 1\submission_dim"
-          TopLeft="1615.00907396722,212" />
+          Id="Package\Data Flow Task 1\submission_fact"
+          TopLeft="1783.00907396722,214" />
         <NodeLayout
-          Size="138,42"
-          Id="Package\Data Flow Task 1\submission_fact DB"
-          TopLeft="1792.5,289" />
+          Size="160,42"
+          Id="Package\Data Flow Task 1\grading_period_score_dim DB"
+          TopLeft="1384.5,456.261103319308" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Data Flow Task 1\grading_period_score_fact DB"
+          TopLeft="1553.5,455.880551659654" />
         <NodeLayout
           Size="176,42"
           Id="Package\Data Flow Task 1\grading_period_dim"
           TopLeft="823.964774707493,373.119448340346" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Data Flow Task 1\submission_fact DB"
+          TopLeft="1792.5,289" />
         <NodeLayout
           Size="176,42"
           Id="Package\Data Flow Task 1\grading_period_fact"
@@ -45326,7 +45510,7 @@
           Id="Package\Data Flow Task 1\assignment_fact DB"
           TopLeft="1123.60790464241,107.044372294372" />
         <NodeLayout
-          Size="141.333333333334,42"
+          Size="141,42"
           Id="Package\Data Flow Task 1\account_dim"
           TopLeft="821.864398148903,29.711038961039" />
         <NodeLayout
@@ -45334,161 +45518,7 @@
           Id="Package\Data Flow Task 1\account_dim DB"
           TopLeft="820.5,105.751478100051" />
         <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output17]"
-          TopLeft="1599.70648645284,421.119448340345">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39.3805516596551"
-              Start="0,0"
-              End="0,31.8805516596551">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.8805516596551" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output16]"
-          TopLeft="1103.74815311951,419.369448340346">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.1305516596541"
-              Start="0,0"
-              End="0,28.6305516596541">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.6305516596541" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output15]"
-          TopLeft="1487.25,244">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35.5"
-              Start="0,0"
-              End="0,28">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output14]"
-          TopLeft="891.932199074451,71.711038961039">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.0404391390124"
-              Start="0,0"
-              End="0,26.5404391390124">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5404391390124" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output13]"
-          TopLeft="1039.90552369003,72.0443722943723">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.8181818181818"
-              Start="0,0"
-              End="0,27.3181818181818">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.3181818181818" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output12]"
-          TopLeft="1193.47695226146,71">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.0443722943723"
-              Start="0,0"
-              End="0,28.5443722943723">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.5443722943723" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output11]"
-          TopLeft="1346.52298205088,71.8809523809524">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.1634199134199"
-              Start="0,0"
-              End="0,28.6634199134199">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.6634199134199" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output10]"
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output8]"
           TopLeft="1502.3708916554,72.4642857142857">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -45510,63 +45540,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output9]"
-          TopLeft="1662.44327940421,79.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,27.3181818181819"
-              Start="0,0"
-              End="0,19.8181818181819">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.8181818181819" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output8]"
-          TopLeft="1844.42055213148,75.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.9545454545455"
-              Start="0,0"
-              End="0,35.4545454545455">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.4545454545455" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Flat File Source Output7]"
-          TopLeft="2040.03418849512,74.6363636363637">
+          TopLeft="1346.52298205088,71.8809523809524">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,42.3181818181818"
+              EndConnector="0,36.1634199134199"
               Start="0,0"
-              End="0,34.8181818181818">
+              End="0,28.6634199134199">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.8181818181818" />
+                    End="0,28.6634199134199" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -45577,18 +45563,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Flat File Source Output6]"
-          TopLeft="912.488733949665,251.5">
+          TopLeft="1193.47695226146,71">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,33.9545454545455"
+              EndConnector="0,36.0443722943723"
               Start="0,0"
-              End="0,26.4545454545455">
+              End="0,28.5443722943723">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.4545454545455" />
+                    End="0,28.5443722943723" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -45599,18 +45585,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Flat File Source Output5]"
-          TopLeft="1102.67055213148,250.5">
+          TopLeft="1039.90552369003,72.0443722943723">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38.3085003388518"
+              EndConnector="0,34.8181818181818"
               Start="0,0"
-              End="0,30.8085003388518">
+              End="0,27.3181818181818">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.8085003388518" />
+                    End="0,27.3181818181818" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -45621,18 +45607,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Flat File Source Output4]"
-          TopLeft="1311.03954991087,244.5">
+          TopLeft="891.932199074451,71.711038961039">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,49.3994094297609"
+              EndConnector="0,34.0404391390124"
               Start="0,0"
-              End="0,41.8994094297609">
+              End="0,26.5404391390124">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.8994094297609" />
+                    End="0,26.5404391390124" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -45643,6 +45629,160 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Flat File Source Output3]"
+          TopLeft="1487.25,244">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.5"
+              Start="0,0"
+              End="0,28">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output2]"
+          TopLeft="1103.74815311951,419.369448340346">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.1305516596541"
+              Start="0,0"
+              End="0,28.6305516596541">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.6305516596541" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output1]"
+          TopLeft="1281.70648645284,419.119448340345">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.3805516596551"
+              Start="0,0"
+              End="0,31.8805516596551">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.8805516596551" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output]"
+          TopLeft="2042.75,259">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output18]"
+          TopLeft="1464.54995492131,417.880551659654">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.380551659654"
+              Start="0,0"
+              End="0,30.880551659654">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.880551659654" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output17]"
+          TopLeft="911.831486452848,415.119448340346">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.380551659654"
+              Start="0,0"
+              End="0,32.880551659654">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.880551659654" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output16]"
+          TopLeft="1861.75453698361,256">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33"
+              Start="0,0"
+              End="0,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output15]"
           TopLeft="1694.00907396722,254">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -45676,19 +45816,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output2]"
-          TopLeft="1861.75453698361,256">
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output14]"
+          TopLeft="1311.03954991087,244.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,33"
+              EndConnector="0,49.3994094297609"
               Start="0,0"
-              End="0,25.5">
+              End="0,41.8994094297609">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.5" />
+                    End="0,41.8994094297609" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -45698,19 +45838,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output1]"
-          TopLeft="911.831486452848,415.119448340346">
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output13]"
+          TopLeft="1102.67055213148,250.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,40.380551659654"
+              EndConnector="0,38.3085003388518"
               Start="0,0"
-              End="0,32.880551659654">
+              End="0,30.8085003388518">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.880551659654" />
+                    End="0,30.8085003388518" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -45720,19 +45860,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output]"
-          TopLeft="2042.75,259">
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output12]"
+          TopLeft="912.488733949665,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,35"
+              EndConnector="0,33.9545454545455"
               Start="0,0"
-              End="0,27.5">
+              End="0,26.4545454545455">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.5" />
+                    End="0,26.4545454545455" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -45741,28 +45881,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="150.666666666667,43.3333333333334"
-          Id="Package\Data Flow Task 1\grading_period_score_fact DB"
-          TopLeft="1360.5,457.880551659654" />
-        <NodeLayout
-          Size="152.666666666667,42"
-          Id="Package\Data Flow Task 1\grading_period_score_fact"
-          TopLeft="1361.09990984262,377.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Flat File Source Output18]"
-          TopLeft="1436.63328825464,419.5">
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output11]"
+          TopLeft="2040.03418849512,74.6363636363637">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38.3805516596539"
+              EndConnector="0,42.3181818181818"
               Start="0,0"
-              End="0,30.8805516596539">
+              End="0,34.8181818181818">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.8805516596539" />
+                    End="0,34.8181818181818" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -45771,28 +45903,64 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="152,42"
-          Id="Package\Data Flow Task 1\grading_period_score_dim DB"
-          TopLeft="1198.5,460.261103319308" />
-        <NodeLayout
-          Size="158.666666666667,42"
-          Id="Package\Data Flow Task 1\grading_period_score_dim"
-          TopLeft="1199.09990984262,379.880551659654" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output10]"
+          TopLeft="1844.42055213148,75.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.9545454545455"
+              Start="0,0"
+              End="0,35.4545454545455">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.4545454545455" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output9]"
+          TopLeft="1662.44327940421,79.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.3181818181819"
+              Start="0,0"
+              End="0,19.8181818181819">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.8181818181819" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Flat File Source Output19]"
-          TopLeft="1276.46662158798,421.880551659654">
+          TopLeft="1631.29995492131,416.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38.3805516596539"
+              EndConnector="0,39.380551659654"
               Start="0,0"
-              End="0,30.8805516596539">
+              End="0,31.880551659654">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.8805516596539" />
+                    End="0,31.880551659654" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -45844,19 +46012,6 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task 1\pseudonym_dim DB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task 1\course_section_dim DB">
     <Properties>
       <Property>
@@ -45870,7 +46025,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task 1\submission_dim DB">
+    design-time-name="Package\Data Flow Task 1\pseudonym_dim DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -45909,6 +46064,19 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\submission_dim DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task 1\course_dim DB">
     <Properties>
       <Property>
@@ -45923,6 +46091,32 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task 1\grading_period_group_dim DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\grading_period_score_dim DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\grading_period_score_fact DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
